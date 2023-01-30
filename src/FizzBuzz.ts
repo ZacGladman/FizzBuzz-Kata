@@ -15,6 +15,8 @@ export default function FizzBuzz(n: number): string {
   return cleanedOutputString;
 }
 
+//console.log(FizzBuzz(1000));
+
 /*
 >>>>>>> PSEUDOCODE <<<<<<<
 
