@@ -1,3 +1,20 @@
+import convertNumberOrKeepSame from "./ConvertNumberOrKeepSame";
+
+/**
+ * @param {number} n
+ * @return {string} outputString
+ */
+
+export default function FizzBuzz(n: number): string {
+  let rawOutputString = "";
+  for (let i = 1; i <= n; i++) {
+    const convertedNumber = convertNumberOrKeepSame(i);
+    rawOutputString += `, ${convertedNumber}`;
+  }
+  const cleanedOutputString = rawOutputString.slice(2);
+  return cleanedOutputString;
+}
+
 /*
 >>>>>>> PSEUDOCODE <<<<<<<
 
